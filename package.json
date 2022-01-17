@@ -1,0 +1,66 @@
+{
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/scenarioworld/articy-json-package-filter",
+  "bugs": "https://github.com/scenarioworld/articy-json-package-filter/issues",
+  "repository": {
+    "url": "https://github.com/scenarioworld/articy-json-package-filter",
+    "type": "git"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "articy-json-package-filter",
+  "author": "Brook Warner Jensen <brook@scenarioworld.ca>",
+  "description": "Filters packages from Articy JSON files through a webpack loader.",
+  "module": "dist/articy-json-package-filter.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/articy-json-package-filter.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/articy-json-package-filter.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.1",
+    "@types/webpack": "^5.28.0",
+    "articy-js": "^1.2.2",
+    "husky": "^7.0.1",
+    "memfs": "^3.2.2",
+    "size-limit": "^5.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.46.0"
+  },
+  "dependencies": {}
+}

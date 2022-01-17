@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bad input causes failure 1`] = `"Error: Invalid options object. Articy JSON Package Filter has been initialized using an options object that does not match the API schema."`;

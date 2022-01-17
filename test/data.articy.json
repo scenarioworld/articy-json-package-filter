@@ -1,0 +1,9 @@
+{
+    "Packages": [
+        { "Name": "game.ep1" },
+        { "Name": "game.common" },
+        { "Name": "game.ep2" },
+        { "Name": "sandbox.fun" },
+        { "Name": "sandbox.bad" }
+    ]
+}
